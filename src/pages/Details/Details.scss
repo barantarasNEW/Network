@@ -1,0 +1,40 @@
+@import '../../styles/utils/vars';
+
+.details {
+  padding: 0 20px;
+  &__img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+
+  &__descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__description {
+    display: flex;
+    gap: 10px;
+
+    &__headline {
+      width: 160px;
+    }
+
+    &__keywords {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    &__keyword {
+      background-color: $primaryColor;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}

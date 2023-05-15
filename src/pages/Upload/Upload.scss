@@ -1,0 +1,19 @@
+.upload {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__tip,
+  &__select {
+    margin-bottom: 15px;
+  }
+
+  &__select {
+    width: 60%;
+    height: 30px;
+  }
+}
