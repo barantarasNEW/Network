@@ -3,7 +3,7 @@ import { User } from '../types/User';
 import { Album } from '../types/Album';
 
 type Context = {
-  user: User | null;
+  user: User | null | string;
   albums: Album[];
   setAlbum: (image: string, name: string) => void;
   delAlbum: (name: string) => void;

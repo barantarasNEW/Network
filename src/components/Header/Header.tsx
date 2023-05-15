@@ -18,7 +18,7 @@ const Header = () => {
         {location === '/'
           ? (
             <h1 className="header__title">
-              {`Welcome, ${user?.name.split(' ')[0]}.`}
+              {`Welcome, ${user}.`}
             </h1>
           ) : (
             <BreadCrumbs />
