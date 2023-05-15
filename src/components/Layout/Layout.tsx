@@ -57,11 +57,10 @@ const Layout = () => {
       {!user
         ? (
           <FacebookLogin
-            autoLoad
+            // autoLoad
             appId={APP_ID}
             fields="name,email,picture"
             callback={responseFacebook}
-            scope="user_photos"
           />
         ) : (
           <MainContext.Provider value={{
