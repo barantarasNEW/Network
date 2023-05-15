@@ -1,0 +1,10 @@
+@mixin square($_size) {
+  width: $_size;
+  height: $_size;
+}
+
+@mixin flexGapAlign($_gap) {
+  display: flex;
+  align-items: center;
+  gap: $_gap;
+}
