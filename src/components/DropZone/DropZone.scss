@@ -1,0 +1,41 @@
+@import '../../styles/utils/vars';
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  &__file-uploader {
+    width: 300px;
+    height: 200px;
+    border: 2px dashed $primaryColor;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  &__file-uploader__input {
+    display: none;
+  }
+  
+  &__file-uploader__message {
+    text-align: center;
+  }
+  
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+  
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../styles/utils/vars';
+
+.header {
+  &__bottom {
+    padding: 30px;
+    border-bottom: 1px solid $primaryColor;
+    border-top: 1px solid $primaryColor;
+  }
+}

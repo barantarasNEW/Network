@@ -1,0 +1,44 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.navbar {
+  padding: 10px 10px 0 10px;
+
+  &__list {
+    @include flexGapAlign(8px);
+  }
+
+  &__link {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primaryColor;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 1px;
+      background-color: transparent;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      transition: background-color $primaryDuration;
+    }
+
+    &.active {
+      &::after {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__icon {
+    width: 24px;
+  }
+}

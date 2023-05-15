@@ -1,0 +1,30 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+  background-color: $secondaryColor;
+
+  &__block {
+    width: 400px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: $primaryColor;
+    border-radius: 20px;
+
+    @include flexGapAlign(15px);
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+  }
+
+  &__btn {
+    display: contents;
+  }
+}

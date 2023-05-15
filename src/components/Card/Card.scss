@@ -1,0 +1,43 @@
+@import '../../styles/utils/vars';
+
+.card {
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(227, 227, 227);
+  border-bottom: 1px solid $secondaryColor;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $linkColor;
+  }
+
+  &__img {
+    margin-right: 30px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__count-block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+  }
+}
